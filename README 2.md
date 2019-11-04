@@ -31,6 +31,10 @@ Find the file `index.js` and complete the tasks until all of your tests pass. Do
 
 <img alt='instructions screenshot' src='./instructions.png'>
 <<<<<<< HEAD
+<<<<<<< HEAD
 -Tierno-Diallo
 =======
 >>>>>>> 81765641198866bf1d24af5b9abee0a8b521cb65
+=======
+-Tierno-Diallo
+>>>>>>> cc2a0969e8ec4f49f8d1839b7af605e76a5cdeee
