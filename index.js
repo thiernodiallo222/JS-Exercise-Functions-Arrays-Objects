@@ -60,7 +60,11 @@ function makePersonObject(id, name, email) {
  * the returned value should look like `Hello, my name is Leia`.
 */
 function getName(myObject) {
+<<<<<<< HEAD
+  return `Hello, my name is ${ myObject.name }`;
+=======
   return 'Hello, my name is ${ myObject.name }';
+>>>>>>> 81765641198866bf1d24af5b9abee0a8b521cb65
 
 }
 
@@ -84,7 +88,11 @@ function makeSmartPerson(name) {
       return a + b;
     },
     speak: function () {
+<<<<<<< HEAD
+      return `Hello, my name is ${name}`;
+=======
       return 'Hello, my name is ${name}';
+>>>>>>> 81765641198866bf1d24af5b9abee0a8b521cb65
     }
   };
 }
@@ -102,9 +110,14 @@ function makeSmartPerson(name) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(arr, index) {
+<<<<<<< HEAD
+  // const cars = arr;
+  return `This is a ${arr[index].car_make} ${arr[index].car_model}`;
+=======
   const cars = arr;
   const theCar = cars[index];
   return 'This is a {theCar.car_make} {theCar.car_model}';
+>>>>>>> 81765641198866bf1d24af5b9abee0a8b521cb65
 }
 
 /**
@@ -119,9 +132,15 @@ function getCarInfoByIndex(arr, index) {
  * it will return `This is a Lincoln Town Car`.
 */
 function getLastCarInfo(arr) {
+<<<<<<< HEAD
+ 
+  const lastCar = arr[arr.length - 1];
+  return `This is a ${lastCar.car_make} ${lastCar.car_model}`;
+=======
   const allCars = array;
   const lastCar = allCars[allCars.length - 1];
   return 'This is a ${lastCar.car_make} ${lastCar.car_model}';
+>>>>>>> 81765641198866bf1d24af5b9abee0a8b521cb65
 
 }
 
@@ -138,6 +157,15 @@ function getLastCarInfo(arr) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoById(arr, myId) {
+<<<<<<< HEAD
+  // const CarsArray = arr;
+ 
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].id === myId) {
+      return `This car is a ${arr[i].car_make} ${arr[i].car_model}`;
+    }
+  }
+=======
   const CarsArray = arr;
  
   for (let i = 0; i < theCars.length; i++){
@@ -147,8 +175,8 @@ function getCarInfoById(arr, myId) {
     } 
   return 'This car is a ${carsArray[i].car_make} ${carsArray[i].car_model}';
 
+>>>>>>> 81765641198866bf1d24af5b9abee0a8b521cb65
 }
-
 /**
  * ### Challenge `sortCarInventory`
  * 
@@ -157,6 +185,13 @@ function getCarInfoById(arr, myId) {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * sortCarInventory returns an inventory that is sorted by car_model, ascending [A-Z].
 */
+<<<<<<< HEAD
+  function sortCarInventory(arr) {
+  
+    arr.sort((a, b) => (a.car_model > b.car_model) ? 1 : -1)
+  
+    return arr;
+=======
 function sortCarInventory(arr) {
   const carsArray = arr;
   for (let i = 0; i < carrsArray.length - 1; i++){
@@ -170,6 +205,7 @@ function sortCarInventory(arr) {
     }
   }
   return carsArray
+>>>>>>> 81765641198866bf1d24af5b9abee0a8b521cb65
 }
 
 /**
